@@ -1,0 +1,12 @@
+version: "3"
+services:
+  graphql:
+    container_name: mebsuta-graphql
+    image: shahcompbio/mebsuta-graphql:staging
+  frontend:
+    container_name: mebsuta-frontend
+    image: shahcompbio/mebsuta-react:staging
+    ports:
+      - "5050:80"
+    depends_on:
+      - mebsuta-graphql
