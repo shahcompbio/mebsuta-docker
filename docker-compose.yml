@@ -4,7 +4,7 @@ services:
     container_name: mebsuta-graphql
     image: shahcompbio/mebsuta-graphql:staging
     volumes:
-      - datavolume:/root/lib
+      - datavolume:/root/data
   frontend:
     container_name: mebsuta-frontend
     image: shahcompbio/mebsuta-react:staging
